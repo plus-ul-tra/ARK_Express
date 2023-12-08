@@ -1,31 +1,20 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Ark-Express Login Page</title>
+    <meta charset="UTF-8">
+    <title>๋ก๊ทธ์ธ ํ์ด์ง€</title>
 </head>
 <body>
-	<div>
-		<h1>Form postนๆฝฤ </h1>
-		<p>ตฅภฬลอ ภüผÛวุบธภฺ</P>
-	</div>
-	<form action="next.jsp" method ="post">
-	<div>
-		<label>Name</label><input name ="name" type = "text"/>
-	</div>
-	
-	<div>
-	<label>ฑววั</label>
-	<br><input type ="radio" name ="authority" value ="User" Checked>User<br>
-	<input type ="radio" name ="authority" value ="Knight" Checked>Knight<br>
-	<input type ="radio" name ="authority" value ="Manager" Checked>Manager
-	</div>
-	<div>
-	<label>ณชภฬ</label><input name ="age" type ="number" value ="25" required=""/>
-	</div>
-	<button type = "submit">ภüผÛ</button>
-	</form>
+    <h2>๋ก๊ทธ์ธ</h2>
+    <form action="LoginServlet" method="post">
+        <label>์•์ด๋””: </label>
+        <input type="text" name="username" required><br>
+        <label>๋น๋ฐ€๋ฒํธ: </label>
+        <input type="password" name="password" required><br>
+        <input type="submit" value="๋ก๊ทธ์ธ">
+    </form>
+    <br>
+    <a href="register.jsp">ํ์๊ฐ€์…</a>
 </body>
 </html>
