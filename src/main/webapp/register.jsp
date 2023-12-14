@@ -4,12 +4,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>회원가입 페이지</title>
+    <title>Register to Ark</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <h2>회원가입</h2>
+	<div class ="container>">
+    <h2>Register</h2>
     <% 
-        // 폼에서 전송된 데이터 받기
+        // 데이터 받기
         String id = request.getParameter("id");
         String password = request.getParameter("password");
         String username = request.getParameter("username");
@@ -48,6 +50,7 @@
 
                     if (result > 0) {
                         out.println("회원가입 성공!");
+                        response.sendRedirect("login_page.jsp");
                     } else {
                         out.println("회원가입 실패");
                     }
@@ -70,10 +73,15 @@
         <label>이름 : </label>
         <input type="text" name="username" required><br>
        
-        <label>권한 </label><br>
-        <input type="text" name="authority" required>
-        
+        <label>권한 : </label>
+        <select name="authority" required>
+            <option value="0">Manager</option>
+            <option value="1">Knight</option>
+            <option value="2">User</option>
+        </select>
+        <br>
         <input type="submit" value="회원가입">
     </form>
+    </div>
 </body>
 </html>
