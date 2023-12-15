@@ -24,7 +24,6 @@
 
     <script>
         function redirectToRegister() {
-            // JavaScript로 페이지 이동
             window.location.href = 'register.jsp';
         }
     </script>

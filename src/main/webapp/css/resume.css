@@ -1,0 +1,40 @@
+@charset "EUC-KR";
+		@font-face {
+		    font-family: 'ghosthey';
+		    src: url('../font/ghosthey.ttf') format('truetype');
+		}
+		body {
+            background-image: url('../image/backGround.png');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center center; 
+            font-family:'ghosthey';
+            margin: 0; 
+            padding: 0; 
+			text-align:center;
+            height: 100vh; 
+        }
+
+        h2 {
+        	font-size : 65px;
+            margin-top: 20px;
+        }
+
+        #resumeTable {
+        	background-color:#C9C8C7;
+            margin: 10px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        #resumeTable th, #resumeTable td {
+            border: 2px solid #2C2C2C;
+            padding: 8px;
+            text-align: left;
+        }
+
+        #resumeTable th {
+            background-color: #A8A308;
+        }
+
+       
