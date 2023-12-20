@@ -15,6 +15,8 @@ java.sql.DriverManager, jakarta.servlet.http.HttpServlet"%>
 	<h1>Page For Manager</h1>
  	<button onclick="redirectToRegister('resume.jsp')">이력서 보기</button> 
  	<br>
+ 	<button onclick="redirectToRegister('vehicle.jsp')">운송수단 관리</button>
+ 	<br>
     <button onclick="showForm('register_village')">신규 마을 등록</button>
     <br>
     <button onclick="showForm('register_hub')">신규 HUB 등록</button>
@@ -121,7 +123,7 @@ java.sql.DriverManager, jakarta.servlet.http.HttpServlet"%>
             
         } else {
             // 기본값 또는 예외 처리
-            distance = 5555; // 또는 다른 기본값 설정
+            distance = 5555;
         }    
 	if(headquarter != null){
         try {
@@ -145,7 +147,7 @@ java.sql.DriverManager, jakarta.servlet.http.HttpServlet"%>
                 	out.println("<script>showPopup('HUB 등록 실패');</script>");
                 }
             }
-            // 연결 닫기
+            
             con.close();
         } catch (Exception e) {
             e.printStackTrace();

@@ -1,93 +1,32 @@
-@charset "EUC-KR";
 		@font-face {
 		    font-family: 'ghosthey';
 		    src: url('../font/ghosthey.ttf') format('truetype');
 		}
-		body {
+		h2 {
+        	font-size : 65px;
+            margin-top: 20px;
+        }
+        body {
             background-image: url('../image/backGround.png');
             background-size: cover; 
-            background-repeat: no-repeat; 
+            background-repeat: repeat; 
             background-position: center center; 
             font-family:'ghosthey';
             margin: 0; 
             padding: 0; 
-			text-align:center;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
             height: 100vh; 
         }
-
-        h2 {
-        	font-size : 65px;
-            margin-top: 20px;
-        }
-
-        #resumeTable {
-        	background-color:#C9C8C7;
-            margin: 10px auto;
-            border-collapse: collapse;
-            width: 80%;
-        }
-
-        #resumeTable th, #resumeTable td {
-            border: 2px solid #2C2C2C;
-            padding: 8px;
-            text-align: left;
-        }
-
-        #resumeTable th {
-            background-color: #A8A308;
-        }
-        h1 { 
-            color: #000000;
-            font-size : 65px;
-            text-align: top;
-        }
-
-        label {
-            display: inlin-block;
-            font-weight: bold;
-            color: #7A5E00;
-        }
-
-        input {
-            width: 50%;
-            background-color: #D7D3C5;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #111;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        
-        .container{
+		.container{
 		text-align:grid ;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		}
-		
-		input[type="submit"]{
-            background-color: #7A5E00;
-            color: #111;
-            cursor: pointer;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 4px;
-            box-siziing: border-box;
-            font-weight: bold;
-        }
-        
-        button{
-        	width: 100%;
-            background-color: #7A5E00;
-            color: #111;
-            cursor: pointer;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 4px;
-            box-siziing: border-box;   
-            font-weight: bold;     
-        }
-        #reg_vehicle{
+
+        form{
             background-image: url('../image/paper.png');
             background-size:cover;
             background-repeat: no-repeat;            
@@ -101,5 +40,68 @@
 		    left: 50%;
 		    transform: translateX(-50%);
         }
+        
+        #register_village{
+            background-image: url('../image/paper.png');
+            background-size:cover;
+            background-repeat: no-repeat;            
+            background-position: center center;
+            
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+         
+            position: absolute;
+		    left: 50%;
+		    transform: translateX(-50%);}
+        
+        #resume{
 
-       
+        font-size : 40px;
+        color: #2c2c2c;
+        text-align: center;
+        }
+        
+        h1 { 
+            color: #000000;
+            font-size : 65px;
+            text-align: top;
+        }
+
+        label {
+            display: inlin-block;
+            font-weight: bold;
+            color: #7A5E00;
+        }
+
+        input {
+            width: 100%;
+            background-color: #D7D3C5;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #111;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"]{
+            background-color: #7A5E00;
+            color: #111;
+            cursor: pointer;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            box-siziing: border-box;
+            font-weight: bold;
+        }
+        button{
+        	width: 100%;
+            background-color: #7A5E00;
+            color: #111;
+            cursor: pointer;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            box-siziing: border-box;   
+            font-weight: bold;     
+        }
